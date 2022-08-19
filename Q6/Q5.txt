@@ -1,0 +1,24 @@
+1)Git clone
+ git clone https://github.com/ganm708/220340126013.git
+Cloning into '220340126013'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+2) git init
+Reinitialized existing Git repository in /home/diot/Cloud_exam/Q6/220340126013/.git/
+
+3)git add .
+4) git commit -m "Lastexam"
+5) git push
+Username for 'https://github.com': ganm708
+Password for 'https://ganm708@github.com': 
+Counting objects: 45, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (45/45), 6.45 MiB | 6.33 MiB/s, done.
+Total 45 (delta 0), reused 0 (delta 0)
+To https://github.com/ganm708/220340126013.git
+   9ea32c7..0bb6419  master -> master
+
