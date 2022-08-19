@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  mqtt_broker:
+    image: eclipse-mosquitto
+    container_name: broker
+    volumes:
+        - /home/diot/Cloud_exam/Q5/q5/subscriber/port.conf:/mosquitto/config/mosquitto.conf
+    expose:
+      - 1883
+    ports:
+      - "6502:1883"
+  mqtt-sub:
+    build: ./subscriber
+    container_name: sub
+    depends_on:
+      - mqtt_broker

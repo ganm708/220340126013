@@ -1,0 +1,22 @@
+1)Create subscriber.js and subscribe to topic
+2)Create a docker file and pull node:alpine and provide work directory
+3)Create a docker-compose.yml file and cerate 2 service in it
+      i)Service mqtt broker i.e. eclipse-mosquitto
+      ii)map the port for the broker to hostmachine
+4)Expose the service on 6502:1883 (host and container ports are binded)
+5)run docker-compose up
+
+6)Open terminal and run the publisher us below command
+mosquitto_pub -t test/sensor-data -h localhost -p 6502 -m "{"lat":18.5415,"lon":73.7925,"country":"india","ts":1660804447}" -d
+
+Client null sending CONNECT
+Client null received CONNACK (0)
+Client null sending PUBLISH (d0, q0, r0, m1, 'test/sensor-data', ... (53 bytes))
+Client null sending DISCONNECT
+publish ack is recieved that means the data is published successfully 
+
+
+
+
+
+

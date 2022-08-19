@@ -1,0 +1,19 @@
+1)Login to aws account
+2)Search for IAM in services tab an enter in it
+3)Access management->users-->add users
+4)user name= test_user
+5)In seletc ASW access type tick below
+        i)Password - AWS Management Console access
+        ii)Custom password = test@123
+        iii) Tick Require password reset 
+6)Next permissions
+7)Select Set permissions boundary
+8)Use a permissions boundary to control the maximum user permissions
+9)serach in policy tab for awsEc2 full access and awslambda full access
+10)Add tag key:integerator value:IoT
+11)Create user 
+12)LInk will be displayed copy and run 
+13)enter the user and password set 
+14)Create new password  new password: diot@123
+15)You will be loged in user accocunt and can access on lambda and ec2 services
+16)others services will not be allowed

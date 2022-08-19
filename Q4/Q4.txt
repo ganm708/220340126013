@@ -1,0 +1,20 @@
+1)Write pyhton code fact.py
+2)Creata a Dockerfile
+3)In Dockerfile pull python and alpine image
+4)Set the working directory  path
+5)copy the fact.py file path
+6)CMD ["python3" , "fact.py"]
+7)Spin the container    
+        i) sudo docker build -t fact .
+        ii)sudo docker run -it fact (run the code entering value)
+        iii)output will be displayed
+8)Push the image to docker
+
+    i)add tag with repo name and check it image is cretaed use below command
+    sudo docker tag fact:latest ganm6477/ganm6477prn13:fact_test
+    ii)log in to docker 
+    sudo docker login
+    username:
+    passwprd
+    iii)Push the image to git using below command
+    sudo docker push ganm6477/ganm6477prn13:fact_test
